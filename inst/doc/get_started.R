@@ -1,4 +1,4 @@
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -16,17 +16,17 @@ knitr::kable(cras_table)
 
 
 ## ----fix, eval=FALSE----------------------------------------------------------
-#  
-#  fix(cras_table)
-#  
+# 
+# fix(cras_table)
+# 
 
 ## ----write_csv, eval=FALSE----------------------------------------------------
-#  
-#  template_create(authors = c("Friedrich Ratzel",
-#                                            "Pau Vidal de la Blache",
-#                                            "Élisée Reclus"),
-#                              file = path_to_your_csv_file)
-#  
+# 
+# template_create(authors = c("Friedrich Ratzel",
+#                                           "Pau Vidal de la Blache",
+#                                           "Élisée Reclus"),
+#                             file = path_to_your_csv_file)
+# 
 
 ## ----define_roles-------------------------------------------------------------
 
@@ -40,9 +40,9 @@ knitr::kable(cras_got)
 
 
 ## ----template_read, eval=FALSE------------------------------------------------
-#  
-#  cras_table <- template_read(path_to_your_csv_file)
-#  
+# 
+# cras_table <- template_read(path_to_your_csv_file)
+# 
 
 ## ----populate_random, echo=FALSE----------------------------------------------
 
@@ -58,8 +58,8 @@ textfile <- tempfile()
 cras_write(cras_table, textfile, markdown = TRUE)
 
 
-## ---- eval = FALSE------------------------------------------------------------
-#  
-#  cras_write(cras_got, drop = FALSE, markdown = TRUE)
-#  
+## ----eval = FALSE-------------------------------------------------------------
+# 
+# cras_write(cras_got, drop = FALSE, markdown = TRUE)
+# 
 
